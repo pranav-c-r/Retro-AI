@@ -1,0 +1,77 @@
+/* src/index.css */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #0d1117, #1f2937);
+  color: #c9d1d9;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Chat container fixes */
+.chat-container {
+  width: 90vw;
+  max-width: 600px;
+  height: 90vh;
+  background: rgba(13, 17, 23, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Message display area */
+.messages {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 10px;
+  border-bottom: 2px solid #2a2f3a;
+}
+
+/* Input container fixes */
+.input-container {
+  display: flex;
+  align-items: center;
+  width: 95%;
+  padding: 10px;
+  background: rgba(13, 17, 23, 0.9);
+  border-radius: 0 0 10px 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* Input field adjustments */
+.input-container input {
+  flex-grow: 1;
+  padding: 10px;
+  border: none;
+  background: #161b22;
+  color: white;
+  border-radius: 5px;
+  outline: none;
+  max-width: calc(100% - 40px);
+}
+
+/* Send button fix */
+.send-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.send-button svg {
+  width: 24px;
+  height: 24px;
+  fill: #58a6ff;
+}

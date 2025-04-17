@@ -5,6 +5,7 @@ import google.generativeai as genai
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 
+genai.configure(api_key="AIzaSyBZeNyePgj9rHGotMNyWi58vT0A3E1W7Pw")
 model = genai.GenerativeModel("gemini-1.5-pro-latest")
 
 @app.route('/chat', methods=['POST'])

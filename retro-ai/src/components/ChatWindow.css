@@ -1,0 +1,138 @@
+/* src/components/ChatWindow.css */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    max-width: 800px;
+    margin: 0 auto;
+    background: #0f0f13;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  
+  .messages {
+    flex: 1;
+    padding: 24px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #3a3a4a #1e1e2a;
+    background: linear-gradient(135deg, #121218 0%, #0a0a0e 100%);
+  }
+  
+  /* Custom scrollbar for WebKit */
+  .messages::-webkit-scrollbar {
+    width: 8px;
+  }
+  .messages::-webkit-scrollbar-track {
+    background: #1e1e2a;
+    border-radius: 4px;
+  }
+  .messages::-webkit-scrollbar-thumb {
+    background: #3a3a4a;
+    border-radius: 4px;
+  }
+  
+  .input-container {
+    display: flex;
+    padding: 16px;
+    background: #1a1a24;
+    border-top: 1px solid #2a2a3a;
+  }
+  
+  .input-container input {
+    flex: 1;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 30px;
+    background: #252534;
+    color: #e0e0e8;
+    font-size: 16px;
+    outline: none;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+  }
+  
+  .input-container input:focus {
+    background: #2d2d3d;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.6), 0 0 0 2px #4a80f0;
+  }
+  
+  .input-container input::placeholder {
+    color: #5a5a6e;
+  }
+  
+  .send-button {
+    margin-left: 12px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #4a80f0 0%, #6a5acd 100%);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(74, 128, 240, 0.3);
+  }
+  
+  .send-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(74, 128, 240, 0.4);
+  }
+  
+/* Add these to your existing ChatWindow.css */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    max-width: 500px;
+    margin: 0 auto;
+    background: #0c1317;
+    font-family: 'Segoe UI', Helvetica, sans-serif;
+  }
+  
+  .messages {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background: #0c1317;
+    background-image: url('https://web.whatsapp.com/img/bg-chat-tile-dark_a4be512e7195b6b733d9110b408f075d.png');
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-container {
+    display: flex;
+    padding: 10px;
+    background: #1f2c33;
+    align-items: center;
+  }
+  
+  .input-container input {
+    flex: 1;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #2a3942;
+    color: #d1d7db;
+    font-size: 15px;
+    margin-right: 10px;
+    outline: none;
+  }
+  
+  /* Keep your existing send button styles */
+
+  .send-button:active {
+    transform: translateY(0);
+  }
+  
+  .send-button svg {
+    width: 24px;
+    height: 24px;
+    fill: white;
+  }
